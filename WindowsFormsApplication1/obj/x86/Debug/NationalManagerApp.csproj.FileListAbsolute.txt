@@ -1,0 +1,5 @@
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog

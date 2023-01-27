@@ -1,0 +1,162 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmeticsLibrary", "CosmeticsLibrary\CosmeticsLibrary.csproj", "{54160255-8B8F-42E5-8991-205F57F16E98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A76CA377-4D1D-45FE-A055-16F86AC3412A}"
+	ProjectSection(SolutionItems) = preProject
+		CosmeticsLibrary.vsmdi = CosmeticsLibrary.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGetListofOrder", "TestGetListofOrder\TestGetListofOrder.csproj", "{9F88637B-6465-446B-A6BA-A42ED629214A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmeticsRemoteServer", "ConsoleApplication1\CosmeticsRemoteServer.csproj", "{7192CF43-7F83-46A5-BCEC-BDC20BC8FCCB}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CosmeticsWebservice", "CosmeticsWebservice\", "{9F335DE7-CDF1-4428-9476-659CD473B2DC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{54160255-8B8F-42E5-8991-205F57F16E98}|CosmeticsLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/CosmeticsWebservice"
+		Debug.AspNetCompiler.PhysicalPath = "CosmeticsWebservice\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CosmeticsWebservice\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CosmeticsWebservice"
+		Release.AspNetCompiler.PhysicalPath = "CosmeticsWebservice\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CosmeticsWebservice\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49314"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CustomerWebsite", "CustomerWebsite\", "{994F76BF-17EF-4A2E-BDC3-4B023BA4D51B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{54160255-8B8F-42E5-8991-205F57F16E98}|CosmeticsLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/CustomerWebsite"
+		Debug.AspNetCompiler.PhysicalPath = "CustomerWebsite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CustomerWebsite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CustomerWebsite"
+		Release.AspNetCompiler.PhysicalPath = "CustomerWebsite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CustomerWebsite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49487"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{9F335DE7-CDF1-4428-9476-659CD473B2DC} = {9F335DE7-CDF1-4428-9476-659CD473B2DC}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InternetManagerWeb", "InternetManagerWeb\", "{CE2EA09E-2E9A-4FF8-8D60-C62402E774AC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/InternetManagerWeb"
+		Debug.AspNetCompiler.PhysicalPath = "InternetManagerWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\InternetManagerWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/InternetManagerWeb"
+		Release.AspNetCompiler.PhysicalPath = "InternetManagerWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\InternetManagerWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50837"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CosmeticsLibrary.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54160255-8B8F-42E5-8991-205F57F16E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54160255-8B8F-42E5-8991-205F57F16E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54160255-8B8F-42E5-8991-205F57F16E98}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{54160255-8B8F-42E5-8991-205F57F16E98}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{54160255-8B8F-42E5-8991-205F57F16E98}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{54160255-8B8F-42E5-8991-205F57F16E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54160255-8B8F-42E5-8991-205F57F16E98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54160255-8B8F-42E5-8991-205F57F16E98}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{54160255-8B8F-42E5-8991-205F57F16E98}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{54160255-8B8F-42E5-8991-205F57F16E98}.Release|x86.ActiveCfg = Release|Any CPU
+		{9F88637B-6465-446B-A6BA-A42ED629214A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F88637B-6465-446B-A6BA-A42ED629214A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F88637B-6465-446B-A6BA-A42ED629214A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9F88637B-6465-446B-A6BA-A42ED629214A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9F88637B-6465-446B-A6BA-A42ED629214A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9F88637B-6465-446B-A6BA-A42ED629214A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F88637B-6465-446B-A6BA-A42ED629214A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F88637B-6465-446B-A6BA-A42ED629214A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9F88637B-6465-446B-A6BA-A42ED629214A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9F88637B-6465-446B-A6BA-A42ED629214A}.Release|x86.ActiveCfg = Release|Any CPU
+		{7192CF43-7F83-46A5-BCEC-BDC20BC8FCCB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7192CF43-7F83-46A5-BCEC-BDC20BC8FCCB}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7192CF43-7F83-46A5-BCEC-BDC20BC8FCCB}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7192CF43-7F83-46A5-BCEC-BDC20BC8FCCB}.Debug|x86.ActiveCfg = Debug|x86
+		{7192CF43-7F83-46A5-BCEC-BDC20BC8FCCB}.Debug|x86.Build.0 = Debug|x86
+		{7192CF43-7F83-46A5-BCEC-BDC20BC8FCCB}.Release|Any CPU.ActiveCfg = Release|x86
+		{7192CF43-7F83-46A5-BCEC-BDC20BC8FCCB}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7192CF43-7F83-46A5-BCEC-BDC20BC8FCCB}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7192CF43-7F83-46A5-BCEC-BDC20BC8FCCB}.Release|x86.ActiveCfg = Release|x86
+		{7192CF43-7F83-46A5-BCEC-BDC20BC8FCCB}.Release|x86.Build.0 = Release|x86
+		{9F335DE7-CDF1-4428-9476-659CD473B2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F335DE7-CDF1-4428-9476-659CD473B2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F335DE7-CDF1-4428-9476-659CD473B2DC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9F335DE7-CDF1-4428-9476-659CD473B2DC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9F335DE7-CDF1-4428-9476-659CD473B2DC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9F335DE7-CDF1-4428-9476-659CD473B2DC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F335DE7-CDF1-4428-9476-659CD473B2DC}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9F335DE7-CDF1-4428-9476-659CD473B2DC}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9F335DE7-CDF1-4428-9476-659CD473B2DC}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9F335DE7-CDF1-4428-9476-659CD473B2DC}.Release|x86.ActiveCfg = Debug|Any CPU
+		{994F76BF-17EF-4A2E-BDC3-4B023BA4D51B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{994F76BF-17EF-4A2E-BDC3-4B023BA4D51B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{994F76BF-17EF-4A2E-BDC3-4B023BA4D51B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{994F76BF-17EF-4A2E-BDC3-4B023BA4D51B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{994F76BF-17EF-4A2E-BDC3-4B023BA4D51B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{994F76BF-17EF-4A2E-BDC3-4B023BA4D51B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{994F76BF-17EF-4A2E-BDC3-4B023BA4D51B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{994F76BF-17EF-4A2E-BDC3-4B023BA4D51B}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{994F76BF-17EF-4A2E-BDC3-4B023BA4D51B}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{994F76BF-17EF-4A2E-BDC3-4B023BA4D51B}.Release|x86.ActiveCfg = Debug|Any CPU
+		{CE2EA09E-2E9A-4FF8-8D60-C62402E774AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE2EA09E-2E9A-4FF8-8D60-C62402E774AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE2EA09E-2E9A-4FF8-8D60-C62402E774AC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CE2EA09E-2E9A-4FF8-8D60-C62402E774AC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CE2EA09E-2E9A-4FF8-8D60-C62402E774AC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CE2EA09E-2E9A-4FF8-8D60-C62402E774AC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE2EA09E-2E9A-4FF8-8D60-C62402E774AC}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{CE2EA09E-2E9A-4FF8-8D60-C62402E774AC}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CE2EA09E-2E9A-4FF8-8D60-C62402E774AC}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CE2EA09E-2E9A-4FF8-8D60-C62402E774AC}.Release|x86.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

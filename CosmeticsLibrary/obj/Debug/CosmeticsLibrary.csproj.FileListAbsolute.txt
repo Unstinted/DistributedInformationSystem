@@ -1,0 +1,12 @@
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\bin\Debug\CosmeticsLibrary.dll.config
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\bin\Debug\CosmeticsLibrary.dll
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\bin\Debug\CosmeticsLibrary.pdb
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\obj\Debug\CosmeticsLibrary.dll
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\obj\Debug\CosmeticsLibrary.pdb
+D:\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\bin\Debug\CosmeticsLibrary.dll.config
+D:\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\bin\Debug\CosmeticsLibrary.dll
+D:\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\bin\Debug\CosmeticsLibrary.pdb
+D:\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\obj\Debug\CosmeticsLibrary.dll
+D:\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\obj\Debug\CosmeticsLibrary.pdb

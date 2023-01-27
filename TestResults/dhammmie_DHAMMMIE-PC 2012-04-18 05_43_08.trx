@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="454d34e6-eb31-4a75-97fb-66d043e77ac8" name="dhammmie@DHAMMMIE-PC 2012-04-18 05:43:08" runUser="DHAMMMIE-PC\dhammmie" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6c3cd39d-bb03-4696-86f9-e133fe9b21db">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="dhammmie_DHAMMMIE-PC 2012-04-18 05_43_08">
+      <DeploymentItem filename="c:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\bin\Debug\CosmeticsLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-18T05:43:08.1789835+07:00" queuing="2012-04-18T05:43:08.2519877+07:00" start="2012-04-18T05:43:08.3819951+07:00" finish="2012-04-18T05:43:10.5911215+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetCustomerTest1" storage="c:\users\dhammmie\documents\dis coursework\cosmeticslibrary\testgetlistoforder\bin\debug\testgetlistoforder.dll" id="9707501e-a175-2eae-7962-a46c6c43aca4">
+      <Execution id="4ffb8a68-4839-4d22-8e99-770ee19d3c3d" />
+      <TestMethod codeBase="c:/Users/dhammmie/Documents/DIS Coursework/CosmeticsLibrary/TestGetListofOrder/bin/Debug/TestGetListofOrder.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestGetListofOrder.SaleStaffDAOTest, TestGetListofOrder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCustomerTest1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9707501e-a175-2eae-7962-a46c6c43aca4" executionId="4ffb8a68-4839-4d22-8e99-770ee19d3c3d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4ffb8a68-4839-4d22-8e99-770ee19d3c3d" testId="9707501e-a175-2eae-7962-a46c6c43aca4" testName="GetCustomerTest1" computerName="DHAMMMIE-PC" duration="00:00:00.0704631" startTime="2012-04-18T05:43:08.3889955+07:00" endTime="2012-04-18T05:43:09.0600339+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ffb8a68-4839-4d22-8e99-770ee19d3c3d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

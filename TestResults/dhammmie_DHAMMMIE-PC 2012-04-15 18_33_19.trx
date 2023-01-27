@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="82ec2e8e-11e4-4e31-8f60-7cac244bc3a1" name="dhammmie@DHAMMMIE-PC 2012-04-15 18:33:19" runUser="DHAMMMIE-PC\dhammmie" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6c3cd39d-bb03-4696-86f9-e133fe9b21db">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="dhammmie_DHAMMMIE-PC 2012-04-15 18_33_19">
+      <DeploymentItem filename="C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\bin\Debug\CosmeticsLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-15T18:33:19.4324216+07:00" queuing="2012-04-15T18:33:19.5684294+07:00" start="2012-04-15T18:33:19.5794300+07:00" finish="2012-04-15T18:33:20.6894935+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateLocalOrderTest" storage="c:\users\dhammmie\documents\dis coursework\cosmeticslibrary\testgetlistoforder\bin\debug\testgetlistoforder.dll" id="8b7bc8a7-78e6-b4b7-de76-da8e77a0d07c">
+      <Execution id="f260139b-d57f-441c-88f0-8c918b0cc20c" />
+      <TestMethod codeBase="C:/Users/dhammmie/Documents/DIS Coursework/CosmeticsLibrary/TestGetListofOrder/bin/Debug/TestGetListofOrder.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestGetListofOrder.SaleStaffDAOTest, TestGetListofOrder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateLocalOrderTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8b7bc8a7-78e6-b4b7-de76-da8e77a0d07c" executionId="f260139b-d57f-441c-88f0-8c918b0cc20c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f260139b-d57f-441c-88f0-8c918b0cc20c" testId="8b7bc8a7-78e6-b4b7-de76-da8e77a0d07c" testName="CreateLocalOrderTest" computerName="DHAMMMIE-PC" duration="00:00:00.0999721" startTime="2012-04-15T18:33:19.7284385+07:00" endTime="2012-04-15T18:33:20.5494855+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f260139b-d57f-441c-88f0-8c918b0cc20c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestGetListofOrder.SaleStaffDAOTest.CreateLocalOrderTest threw exception: 
+System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'OrderID', table 'Cosmetics.dbo.LocalOrder'; column does not allow nulls. INSERT fails.
+The statement has been terminated.</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CosmeticsLibrary.DAO.SQLUtility.ExecuteNonQuery(String Query) in C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\DAO\SQLUtility.cs:line 45
+   at CosmeticsLibrary.DAO.SaleStaffDAO.CreateLocalOrder(DateTime OrderDate, Int32 EmployeeID, Int32 CustomerID, Int32 StoreID) in C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\DAO\SaleStaffDAO.cs:line 63
+   at TestGetListofOrder.SaleStaffDAOTest.CreateLocalOrderTest() in C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\TestGetListofOrder\SaleStaffDAOTest.cs:line 121
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

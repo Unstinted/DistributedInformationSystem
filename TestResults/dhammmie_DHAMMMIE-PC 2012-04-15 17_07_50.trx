@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c8347f49-3f20-42e0-9541-98ae28feb568" name="dhammmie@DHAMMMIE-PC 2012-04-15 17:07:50" runUser="DHAMMMIE-PC\dhammmie" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6c3cd39d-bb03-4696-86f9-e133fe9b21db">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="dhammmie_DHAMMMIE-PC 2012-04-15 17_07_50">
+      <DeploymentItem filename="C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\bin\Debug\CosmeticsLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-15T17:07:50.1840454+07:00" queuing="2012-04-15T17:07:58.0544955+07:00" start="2012-04-15T17:07:58.4725194+07:00" finish="2012-04-15T17:08:02.2387348+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AuthenticateTest" storage="c:\users\dhammmie\documents\dis coursework\cosmeticslibrary\testgetlistoforder\bin\debug\testgetlistoforder.dll" id="9b177ec9-d2b5-dd15-00a7-fc533685389c">
+      <Execution id="54318552-10b8-484a-9e8f-7cea77007852" />
+      <TestMethod codeBase="C:/Users/dhammmie/Documents/DIS Coursework/CosmeticsLibrary/TestGetListofOrder/bin/Debug/TestGetListofOrder.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestGetListofOrder.CustomerDAOTest, TestGetListofOrder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AuthenticateTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9b177ec9-d2b5-dd15-00a7-fc533685389c" executionId="54318552-10b8-484a-9e8f-7cea77007852" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="54318552-10b8-484a-9e8f-7cea77007852" testId="9b177ec9-d2b5-dd15-00a7-fc533685389c" testName="AuthenticateTest" computerName="DHAMMMIE-PC" duration="00:00:01.9764125" startTime="2012-04-15T17:07:58.5485238+07:00" endTime="2012-04-15T17:08:02.0707252+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54318552-10b8-484a-9e8f-7cea77007852">
+    </UnitTestResult>
+  </Results>
+</TestRun>

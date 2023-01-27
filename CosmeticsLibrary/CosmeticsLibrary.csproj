@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{54160255-8B8F-42E5-8991-205F57F16E98}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CosmeticsLibrary</RootNamespace>
+    <AssemblyName>CosmeticsLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BO\Job_History.cs" />
+    <Compile Include="BO\LocalDiscount.cs" />
+    <Compile Include="BO\LocalOrder.cs" />
+    <Compile Include="BO\NationalDiscount.cs" />
+    <Compile Include="BO\OnlineOrder.cs" />
+    <Compile Include="BO\OnlineOrderDetails.cs" />
+    <Compile Include="BO\LocalOrderDetails.cs" />
+    <Compile Include="BO\OnlinePayment.cs" />
+    <Compile Include="BO\LocalPayment.cs" />
+    <Compile Include="BO\Product.cs" />
+    <Compile Include="BO\Shipper.cs" />
+    <Compile Include="BO\Customer.cs" />
+    <Compile Include="BO\Employee.cs" />
+    <Compile Include="BO\Job.cs" />
+    <Compile Include="BO\Stock.cs" />
+    <Compile Include="BO\Store.cs" />
+    <Compile Include="BO\Supplier.cs" />
+    <Compile Include="DAO\User.cs" />
+    <Compile Include="CosmeticsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CosmeticsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\CustomerDAO.cs" />
+    <Compile Include="DAO\InternetManagerDAO.cs" />
+    <Compile Include="DAO\LocalManagerDAO.cs" />
+    <Compile Include="DAO\NationalManagerDAO.cs" />
+    <Compile Include="DAO\SaleStaffDAO.cs" />
+    <Compile Include="DAO\SQLUtility.cs" />
+    <Compile Include="FACADE\CustomerFacade.cs" />
+    <Compile Include="FACADE\InternetManagerFacade.cs" />
+    <Compile Include="FACADE\LocalManagerFacade.cs" />
+    <Compile Include="FACADE\NationalManagerFacade.cs" />
+    <Compile Include="FACADE\SalesStaffFacade.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="CosmeticsDataSet.xsc">
+      <DependentUpon>CosmeticsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CosmeticsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CosmeticsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CosmeticsDataSet.xss">
+      <DependentUpon>CosmeticsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

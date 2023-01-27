@@ -1,0 +1,7 @@
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\ClassTest\bin\Debug\ClassTest.dll
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\ClassTest\bin\Debug\ClassTest.pdb
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\ClassTest\bin\Debug\PTSLibrary.dll
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\ClassTest\bin\Debug\PTSLibrary.pdb
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\ClassTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\ClassTest\obj\Debug\ClassTest.dll
+C:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\ClassTest\obj\Debug\ClassTest.pdb

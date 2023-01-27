@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="Authenticates">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AuthenticatesResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetNaDiscount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ProductInfo" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="EmployeeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="EndDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="DiscountRate" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetNaDiscountResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="customerId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerResult" type="tns:Customer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Customer">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:User" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="User">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetDiscount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ProductInfo" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="EmployeeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="EndDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="DiscountRate" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StoreID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDiscountResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GenerateProductReportDaily">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="orderDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateProductReportDailyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateProductReportDailyResult" type="tns:ArrayOfOnlineOrderDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOnlineOrderDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OnlineOrderDetails" nillable="true" type="tns:OnlineOrderDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OnlineOrderDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OrderIdentity" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductDetail" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderQuantity" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GenerateProductReportWeekly">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="orderDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="OrderD" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateProductReportWeeklyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateProductReportWeeklyResult" type="tns:ArrayOfOnlineOrderDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productid" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductResult" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Product">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Productcode" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="Productname" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnitSalesPrice" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GenerateOnlinePayDaily">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="paymentDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateOnlinePayDailyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateOnlinePayDailyResult" type="tns:ArrayOfOnlinePayment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOnlinePayment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OnlinePayment" nillable="true" type="tns:OnlinePayment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OnlinePayment">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="product" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderDetails" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderPayment" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="payment" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CheckNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bankname" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UPrice" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="USold" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TPP" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GenerateOnlinePayWeekly">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="paymentDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="PayDay" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateOnlinePayWeeklyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateOnlinePayWeeklyResult" type="tns:ArrayOfOnlinePayment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOfProduct">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListOfProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListOfProductResult" type="tns:ArrayOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProduct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Product" nillable="true" type="tns:Product" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetListOfStore">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetListOfStoreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListOfStoreResult" type="tns:ArrayOfStore" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStore">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Store" nillable="true" type="tns:Store" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Store">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StoreId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="storeAddress" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AuthenticatesSoapIn">
+    <wsdl:part name="parameters" element="tns:Authenticates" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticatesSoapOut">
+    <wsdl:part name="parameters" element="tns:AuthenticatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetNaDiscountSoapIn">
+    <wsdl:part name="parameters" element="tns:SetNaDiscount" />
+  </wsdl:message>
+  <wsdl:message name="SetNaDiscountSoapOut">
+    <wsdl:part name="parameters" element="tns:SetNaDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomer" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetDiscountSoapIn">
+    <wsdl:part name="parameters" element="tns:SetDiscount" />
+  </wsdl:message>
+  <wsdl:message name="SetDiscountSoapOut">
+    <wsdl:part name="parameters" element="tns:SetDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateProductReportDailySoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateProductReportDaily" />
+  </wsdl:message>
+  <wsdl:message name="GenerateProductReportDailySoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateProductReportDailyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateProductReportWeeklySoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateProductReportWeekly" />
+  </wsdl:message>
+  <wsdl:message name="GenerateProductReportWeeklySoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateProductReportWeeklyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProduct" />
+  </wsdl:message>
+  <wsdl:message name="GetProductSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateOnlinePayDailySoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateOnlinePayDaily" />
+  </wsdl:message>
+  <wsdl:message name="GenerateOnlinePayDailySoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateOnlinePayDailyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateOnlinePayWeeklySoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateOnlinePayWeekly" />
+  </wsdl:message>
+  <wsdl:message name="GenerateOnlinePayWeeklySoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateOnlinePayWeeklyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListOfProductSoapIn">
+    <wsdl:part name="parameters" element="tns:ListOfProduct" />
+  </wsdl:message>
+  <wsdl:message name="ListOfProductSoapOut">
+    <wsdl:part name="parameters" element="tns:ListOfProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListOfStoreSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListOfStore" />
+  </wsdl:message>
+  <wsdl:message name="GetListOfStoreSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListOfStoreResponse" />
+  </wsdl:message>
+  <wsdl:portType name="NationalManagerServiceSoap">
+    <wsdl:operation name="Authenticates">
+      <wsdl:input message="tns:AuthenticatesSoapIn" />
+      <wsdl:output message="tns:AuthenticatesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetNaDiscount">
+      <wsdl:input message="tns:SetNaDiscountSoapIn" />
+      <wsdl:output message="tns:SetNaDiscountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomer">
+      <wsdl:input message="tns:GetCustomerSoapIn" />
+      <wsdl:output message="tns:GetCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDiscount">
+      <wsdl:input message="tns:SetDiscountSoapIn" />
+      <wsdl:output message="tns:SetDiscountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateProductReportDaily">
+      <wsdl:input message="tns:GenerateProductReportDailySoapIn" />
+      <wsdl:output message="tns:GenerateProductReportDailySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateProductReportWeekly">
+      <wsdl:input message="tns:GenerateProductReportWeeklySoapIn" />
+      <wsdl:output message="tns:GenerateProductReportWeeklySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <wsdl:input message="tns:GetProductSoapIn" />
+      <wsdl:output message="tns:GetProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateOnlinePayDaily">
+      <wsdl:input message="tns:GenerateOnlinePayDailySoapIn" />
+      <wsdl:output message="tns:GenerateOnlinePayDailySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateOnlinePayWeekly">
+      <wsdl:input message="tns:GenerateOnlinePayWeeklySoapIn" />
+      <wsdl:output message="tns:GenerateOnlinePayWeeklySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListOfProduct">
+      <wsdl:input message="tns:ListOfProductSoapIn" />
+      <wsdl:output message="tns:ListOfProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfStore">
+      <wsdl:input message="tns:GetListOfStoreSoapIn" />
+      <wsdl:output message="tns:GetListOfStoreSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NationalManagerServiceSoap" type="tns:NationalManagerServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Authenticates">
+      <soap:operation soapAction="http://tempuri.org/Authenticates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNaDiscount">
+      <soap:operation soapAction="http://tempuri.org/SetNaDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomer">
+      <soap:operation soapAction="http://tempuri.org/GetCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDiscount">
+      <soap:operation soapAction="http://tempuri.org/SetDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateProductReportDaily">
+      <soap:operation soapAction="http://tempuri.org/GenerateProductReportDaily" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateProductReportWeekly">
+      <soap:operation soapAction="http://tempuri.org/GenerateProductReportWeekly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <soap:operation soapAction="http://tempuri.org/GetProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateOnlinePayDaily">
+      <soap:operation soapAction="http://tempuri.org/GenerateOnlinePayDaily" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateOnlinePayWeekly">
+      <soap:operation soapAction="http://tempuri.org/GenerateOnlinePayWeekly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOfProduct">
+      <soap:operation soapAction="http://tempuri.org/ListOfProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfStore">
+      <soap:operation soapAction="http://tempuri.org/GetListOfStore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NationalManagerServiceSoap12" type="tns:NationalManagerServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Authenticates">
+      <soap12:operation soapAction="http://tempuri.org/Authenticates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetNaDiscount">
+      <soap12:operation soapAction="http://tempuri.org/SetNaDiscount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomer">
+      <soap12:operation soapAction="http://tempuri.org/GetCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDiscount">
+      <soap12:operation soapAction="http://tempuri.org/SetDiscount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateProductReportDaily">
+      <soap12:operation soapAction="http://tempuri.org/GenerateProductReportDaily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateProductReportWeekly">
+      <soap12:operation soapAction="http://tempuri.org/GenerateProductReportWeekly" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <soap12:operation soapAction="http://tempuri.org/GetProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateOnlinePayDaily">
+      <soap12:operation soapAction="http://tempuri.org/GenerateOnlinePayDaily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateOnlinePayWeekly">
+      <soap12:operation soapAction="http://tempuri.org/GenerateOnlinePayWeekly" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOfProduct">
+      <soap12:operation soapAction="http://tempuri.org/ListOfProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfStore">
+      <soap12:operation soapAction="http://tempuri.org/GetListOfStore" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NationalManagerService">
+    <wsdl:port name="NationalManagerServiceSoap" binding="tns:NationalManagerServiceSoap">
+      <soap:address location="http://localhost:49314/CosmeticsWebservice/NationalManagerService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="NationalManagerServiceSoap12" binding="tns:NationalManagerServiceSoap12">
+      <soap12:address location="http://localhost:49314/CosmeticsWebservice/NationalManagerService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

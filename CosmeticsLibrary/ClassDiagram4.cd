@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CosmeticsLibrary.BO.Customer">
+    <Position X="1.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BO\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.Employee">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAgABAAIAAQAAAIA=</HashCode>
+      <FileName>BO\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.Job" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAQAAAAAEBAAAQAAEAABAAAAAAAAAAAAAAAKAIA=</HashCode>
+      <FileName>BO\Job.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.Job_History" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAEAAAAAAAEAAAACAAAAAgABAAAAAAAAAAAEACAIA=</HashCode>
+      <FileName>BO\Job_History.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.LocalDiscount" Collapsed="true">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIAAAAAAAAAAgAAACAQGAAgABABAAAAAAAAAEIAAAA=</HashCode>
+      <FileName>BO\LocalDiscount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.LocalOrder" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAABAAAAAAAAAACAAQEAAAEAAAAgAAEAIAAAgAAEA=</HashCode>
+      <FileName>BO\LocalOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.LocalOrderDetails" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACABAACQAAAAABAAAAAAAAAAABQAAAAAAAgAAAAAA=</HashCode>
+      <FileName>BO\LocalOrderDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.LocalPayment" Collapsed="true">
+    <Position X="15.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAABAQAgEAAAAAABFBAACQAASAAQAAAFAAACAAgAA=</HashCode>
+      <FileName>BO\LocalPayment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.NationalDiscount" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIAAAAAAAAAAgAAACAQGAAgAAABAAAAAAAAAEIAAAA=</HashCode>
+      <FileName>BO\NationalDiscount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.OnlineOrder" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAADAAIIAAAQAAAAICACAAIFAgAQJEAAgCAAEEA=</HashCode>
+      <FileName>BO\OnlineOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.OnlineOrderDetails" Collapsed="true">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAACQIAAAABAAAAAAAAAAABAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>BO\OnlineOrderDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.OnlinePayment" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAABAQAgEAAAAAABFBAACQAASAAQAAAFAAACAAgAA=</HashCode>
+      <FileName>BO\OnlinePayment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.Product" Collapsed="true">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAgAAAACAEAAAAAAAIAAAAAAAAAAAAAAAIIAA=</HashCode>
+      <FileName>BO\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.Shipper" Collapsed="true">
+    <Position X="18.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAEAAAAEAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BO\Shipper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.Stock" Collapsed="true">
+    <Position X="11.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAgAAAAAAAAAAAIAAABAAAAAMAAAIAgQACAA=</HashCode>
+      <FileName>BO\Stock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.Store" Collapsed="true">
+    <Position X="15.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAEAAQABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BO\Store.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.Supplier" Collapsed="true">
+    <Position X="18.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAQBAAADAAgAAIAQAgSAEAAAIQAAAAACAAAgAiAIA=</HashCode>
+      <FileName>BO\Supplier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.BO.User">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAgAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAO\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSet" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hgESBVRJhwEXNOJGJCqDQVCE6BgjUnkJAIIpxgFgBFw=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.CustomerTableAdapter" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.EmployeeTableAdapter" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.JobTableAdapter" Collapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.Job_HistoryTableAdapter" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.LocalDiscountTableAdapter" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.LocalOrderTableAdapter" Collapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.LocalOrderDetailsTableAdapter" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.LocalOrderInvoiceTableAdapter" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.LocalPaymentTableAdapter" Collapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.NationalDiscountTableAdapter" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.OnlineOrderDetailsTableAdapter" Collapsed="true">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.OnlineOrderInvoiceTableAdapter" Collapsed="true">
+    <Position X="17" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.OnlineOrdersTableAdapter" Collapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.OnlinePaymentTableAdapter" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.OrderStatusTableAdapter" Collapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.ProductTableAdapter" Collapsed="true">
+    <Position X="15.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.ShipperTableAdapter" Collapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.StockTableAdapter" Collapsed="true">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.storeTableAdapter" Collapsed="true">
+    <Position X="17" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.SupplierTableAdapter" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.CosmeticsDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>g6CABKBBCFBABEkBgAAgMqAkwAgCgECAQAQADRgADOU=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.DAO.CustomerDAO" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAQwAAAAAAAAAIAAAABQAAAAAERCAIBAAA=</HashCode>
+      <FileName>DAO\CustomerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.DAO.InternetManagerDAO" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAQIgAAAAAAAAAAIAAEAAAAAAAEAAAAABAAA=</HashCode>
+      <FileName>DAO\InternetManagerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.DAO.LocalManagerDAO" Collapsed="true">
+    <Position X="12" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAIkAAAAEAAAAAAACAAAAAAAAEAAAAAAAgA=</HashCode>
+      <FileName>DAO\LocalManagerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.DAO.NationalManagerDAO" Collapsed="true">
+    <Position X="12" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAgQAAAAAAAAAAAAEAAAgAAAEAIAAABAAA=</HashCode>
+      <FileName>DAO\NationalManagerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.DAO.SaleStaffDAO" Collapsed="true">
+    <Position X="12" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFEACAkBBBAAkAAACAAQAAIAAABAAABAAAAACAIBAAA=</HashCode>
+      <FileName>DAO\SaleStaffDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.DAO.SQLUtility" Collapsed="true">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACEAAAABAEAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>DAO\SQLUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.FACADE.CustomerFacade" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAQwBAAAAAAAAIAAAABQAAAAAERCAAIAAA=</HashCode>
+      <FileName>FACADE\CustomerFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.FACADE.InternetManagerFacade" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQIgEAAAAAAAAAIAAEAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>FACADE\InternetManagerFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.FACADE.LocalManagerFacade" Collapsed="true">
+    <Position X="16" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAIkgAAAEAAAAAAACAAAAAAAAEAAAAAAAgA=</HashCode>
+      <FileName>FACADE\LocalManagerFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.FACADE.NationalManagerFacade" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAQIgYAAAAAAAAAAAAEAAAAAAAEAICAIBAAA=</HashCode>
+      <FileName>FACADE\NationalManagerFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.FACADE.SalesStaffFacade" Collapsed="true">
+    <Position X="13.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEACAEABBAAkAAACAAAAAIAAABAAABQAAAAAAIAAAA=</HashCode>
+      <FileName>FACADE\SalesStaffFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosmeticsLibrary.Properties.Settings" Collapsed="true">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAgAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

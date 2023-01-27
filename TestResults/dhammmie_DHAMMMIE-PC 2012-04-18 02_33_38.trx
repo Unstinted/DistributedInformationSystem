@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="576b6e25-880c-46e0-abd6-f2a891acdb28" name="dhammmie@DHAMMMIE-PC 2012-04-18 02:33:38" runUser="DHAMMMIE-PC\dhammmie" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6c3cd39d-bb03-4696-86f9-e133fe9b21db">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="dhammmie_DHAMMMIE-PC 2012-04-18 02_33_38">
+      <DeploymentItem filename="c:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\CosmeticsLibrary\bin\Debug\CosmeticsLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-18T02:33:38.7856373+07:00" queuing="2012-04-18T02:33:38.8906433+07:00" start="2012-04-18T02:33:38.9186449+07:00" finish="2012-04-18T02:33:41.0167649+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetCustomerTest" storage="c:\users\dhammmie\documents\dis coursework\cosmeticslibrary\testgetlistoforder\bin\debug\testgetlistoforder.dll" id="fa74b58a-62fd-6a42-8787-4031d4b462db">
+      <Execution id="1a64fdb3-9311-4901-baaf-9c5e14f31f48" />
+      <TestMethod codeBase="c:/Users/dhammmie/Documents/DIS Coursework/CosmeticsLibrary/TestGetListofOrder/bin/Debug/TestGetListofOrder.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestGetListofOrder.SaleStaffDAOTest, TestGetListofOrder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCustomerTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="fa74b58a-62fd-6a42-8787-4031d4b462db" executionId="1a64fdb3-9311-4901-baaf-9c5e14f31f48" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1a64fdb3-9311-4901-baaf-9c5e14f31f48" testId="fa74b58a-62fd-6a42-8787-4031d4b462db" testName="GetCustomerTest" computerName="DHAMMMIE-PC" duration="00:00:00.1042226" startTime="2012-04-18T02:33:38.9676477+07:00" endTime="2012-04-18T02:33:39.4546756+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a64fdb3-9311-4901-baaf-9c5e14f31f48">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;Dammy Benson (System.String)&gt;. Actual:&lt;CosmeticsLibrary.BO.Customer (CosmeticsLibrary.BO.Customer)&gt;. </Message>
+          <StackTrace>   at TestGetListofOrder.SaleStaffDAOTest.GetCustomerTest() in c:\Users\dhammmie\Documents\DIS Coursework\CosmeticsLibrary\TestGetListofOrder\SaleStaffDAOTest.cs:line 134
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
